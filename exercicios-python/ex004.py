@@ -11,13 +11,19 @@ print('is it alphabetic', a.isalpha())
 #o type a.isalpha() faz o compilador analizar se essa declaração é alfabetico 
 print('is it alphanum', a.isalnum())
 #o type a.isalnum() faz o compilador analizar se na declaração a letras e numeros juntos 
-
+print('is it lower case? ', a.islower())
+print('is it upper case? ', a.isupper())
+# o type a.islower() e a.isupper() faz o compilador analizar se na declaração tem letras maiusculas e minusculas
+print('is it captalized? ', a.istitle())
+#o type a.istitle() faz o compilador analizar se na declaração existem palavras capitalizadas
 
 
 
 
 
 #extra:
+#importante ressaltar que todo a antes do ponto como a.isnumeric, a.isspace, a.salpha, etc.. tem relação direta com o que foi declarado no inicio que foi a = input('...') se fosse b = input ou dorflex = input, o parametro deixaria de ser a e passaria a ser o que foi escrito na delcaração
+
 #lembrando que idependente do que é escrito no input o compilador ira devolver uma resposta que esse tipo primitivo é uma string(str) pois na declaração a = input eu não especifiquei que tipo primitivo eu estou declarando se eu quisesse declarar um tipo numero por exemplo eu teria que declarar algo como a = int(input('qualquer coisa')) ou a = float(input('qualquer coisa'))
 
 #é importante notar que se tiver uma declaração com espaço e uma palavra ou numero juntos o compilador vai alegar false para number e para space por exemplo:
