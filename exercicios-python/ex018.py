@@ -36,3 +36,42 @@ print('o angulo de {} tem a tangente de {:.2f} '.format(angulo, tangente))
 
 
 #qualquer duvida posterior basta rever: https://youtu.be/9GvsphwW26k?si=suDNylrlmvMe8UZG
+
+
+
+#treinando:
+
+
+#1) Crie um programa que:
+#peça um angulo em graus
+#mostre o mesmo angulp em radianos
+#e o inverso: um valor em radianos converetido para graus
+
+import math
+angulo = float(input('Digite o valor de um angulo: '))
+graus = sin(math.degrees(angulo))
+print('o valor em graus da {:.2f} covertido para angulo da {} '.format(graus, angulo))
+radianos = sin(math.radians(angulo))
+print('o valor de radiano da {:.2f} convertido para angulo da {} '.format(radianos, angulo))
+inverso = sin(math.radians(graus))
+print('os valor de radiano da {:.2f} convertido para graus da {:.2f} '.format(inverso, graus))
+
+
+#correção)
+import math
+angulo_graus = float(input('Digite um angulo em graus: '))
+angulo_radianos = math.radians(angulo_graus)
+print(f'{angulo_graus}° equivalem a {angulo_radianos:.4f} radianos')
+
+radianos = float(input('digite um angulo em radianos: '))
+graus = math.degrees(radianos)
+print(f'{radianos:.4f} radianos equivakem a {graus:.2f}°')
+
+
+
+#2)Aplicações diretas (básico)
+#Calcular seno, cosseno e tangente de vários ângulos
+
+#Peça ao usuário para digitar vários ângulos separados por vírgula
+#(ex: 30, 45, 60, 90) e mostre uma tabela com seno, cosseno e tangente de cada um.
+
