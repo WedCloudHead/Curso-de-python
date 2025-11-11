@@ -1,0 +1,71 @@
+Entendendo Modulos em python:
+
+python assim como outras linguagens como java, javascript, dentre outras, é o
+tipo de linguagem que trabalha a partir de pacotes de modulos pré instalaveis
+e pré definidos; uma analogia é pensar num carro basico por exemplo que não
+tenha ar-condicionado, vidros automaticos, aparelho de som, vidro fume, etc..
+e voce pode ir adicionando esses modulos, esses apetrechos no carro, assim
+equipando e tornando o carro mais bem preparado e responsivo para o que voce
+deseja, essa é uma analogia básica de como se pode entender alguns tipos de 
+modulos.
+
+
+outro exemplo é o corpo humano, por exemplo ao acordar o corpo precisa de 
+alguns alimentos para funcionar como bebidas, comidas, gordura, proteina,
+açucar, carboidratos, etc.. esses alimentos pode-se entender como uma 
+biblioteca para linguagem python onde voce vai adicionando aquilo que 
+se precisa de acordo com a necessidade do momento; e seguindo essa 
+analogia, imagine que em sua casa tenham os seguintes alimentos:
+
+bebidas: suco, agua, cafe, guarana, leite, cha, cerveja
+comida: pizza, hamburguer, ovo, cachorro quente, sopa
+doce: rosquinha, cookie, sorvete, bolo, pudim
+
+
+agora voce precisa escrever um programa em python para que escolha quais
+dos alimentos voce quer ingerir, empython existem algumas formas de 
+"chamar" esses alimentos, que é usando import, porem, import geralmente
+vem aconpanhado de algo mais generalizado como por exemplo:
+
+import(bebida(suco, agua, cafe, guarana, leite, cha, cerveja) 
+import(doce(rosquinha, cookie, sorvete, bolo, pudim) 
+
+ao usar esses imports voce percebe que import bebida e import doce
+tras todas as bebidas e todos os doces, e se voce quisesse apenas 
+o leite e o pudim e não todos os itens dessas seleçoes?
+
+ai entra: 
+from(doce(import(pudim)
+
+dessa forma voce consegue trazer um item de forma seletiva exclusiva
+dizendo para python que dessa forma voce quer especificamente aquele
+modulo ou aquela funcionalidade.
+
+
+outro exemplo de biblioteca muito utilizadp em python é math(matematica)
+
+nesse modulo existe algumas varias atribuiçoes como:
+math(matematica)
+ ceil(teto/arrendondar pra cima)
+  floorchão/arrendondar pra baixo)
+   trunc(truncar um numero)
+      pow(potencia0
+       sqrt(raiz quadrada)
+         factorial(fatorial)
+
+seguindo o um exemplo de uso dessas aplicações:
+
+import(math(  (esse tipo de import vai fazer com que algo seja calculado
+de forma generalizada, dependendo do prblema a ser resolvido.)
+
+from(math(import(sqrt(  (dessa forma eu to dizendo para python que eu
+quero apenas o modulo sqrt para resolver esse problema.)
+
+
+from(math(import(sqrt(ceil(  (tambem pode se fazer dessa forma, mostrando
+para o python que agora voce quer considerar que ele traga da biblioteca
+os modulos sqrt e ceil para resolver o problema.
+
+(continuação dessa anotação na aula08a dentro do vscode)
+
+

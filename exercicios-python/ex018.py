@@ -65,13 +65,9 @@ print(f'{angulo_graus}° equivalem a {angulo_radianos:.4f} radianos')
 
 radianos = float(input('digite um angulo em radianos: '))
 graus = math.degrees(radianos)
-print(f'{radianos:.4f} radianos equivakem a {graus:.2f}°')
+print(f'{radianos:.4f} radianos equivalem a {graus:.2f}°')
 
 
 
-#2)Aplicações diretas (básico)
-#Calcular seno, cosseno e tangente de vários ângulos
 
-#Peça ao usuário para digitar vários ângulos separados por vírgula
-#(ex: 30, 45, 60, 90) e mostre uma tabela com seno, cosseno e tangente de cada um.
 
