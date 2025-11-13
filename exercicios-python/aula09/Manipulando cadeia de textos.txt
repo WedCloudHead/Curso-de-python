@@ -60,6 +60,14 @@ len significa comprimento ou seja ele vai analisar quantos índices tem a string
 
 frase.count('o')
 nesse exemplo você esta pedindo ao python para contar quantas letras o existem dentro da string, lembrando que se pedir minusculas ele irá contar somente os o minusculos
+(importantissimo gravar essa forma de conjulgar os metodos
+como nesse exemplo em que eu quero que o python leia somente a quantidade de letras no nome
+ignorando os espaços, entao usasse os metodos dessa forma:
+print('Seu nome tem ao todo {} letras'.format(len(nome) - nome.count(' ')))
+lembrando que len(nome) é usado para analizar os caracteres de forma integral contando os espaços
+ e ao adicionar - nome.count(' ') ou seja - = menos, nome.count() = metodo de contagem, (' ') = aspas com espaço dentro
+significa: conte as caracteres ignorando todos os espaços e considerando apenas as letras.
+formula = len(nome) - nome.count(' '))
 
 frase.count('o',0,13)
 esse exemplo é a junção da análise com fatiamento que o que ele faz é contar quantas letras o há dentro da string de 0 a 13, lembrando sempre que a ultima não    conta.
@@ -96,6 +104,10 @@ um pouco parecido com anterior porem ele pega todas as primeiras letras após os
 
 frase.strip()
 funciona como organizador de espaços inúteis, ou seja, se na string tivesse antes de Curso 3 espaços e depois de Python uns 5 espaços, o que esse método strip faz é desconsiderar esses espaços desnecessários mantendo so o espaço de dentro da string que separam as letras.
+(importante lembrar que o strip tamebm é usado na declaração que vai ser analizada, exemplo: 
+nome = str(input('Digite seu nome completo: ')).strip() 
+percebe-se que strip foi adicionado ao fim da declaração, porem é importante entender que ele foi usado pois a declaração esta em formato input tambem, ou seja a pessoa que for escrever pode colocar espaços desnecessários, caso nao seja input não é 
+necessario o strip logo apos a declaração inicial)
 
 frase.rstrip()
 parecido com método anterior, porem agora reduzindo somente os espaços do fim da string do lado direito somente, esse r antes de strip significa (right)
@@ -114,6 +126,20 @@ por padrão o método split divide a string pegando como base seus espaços entr
    (lista00)    (lista01)    (lista02)           (lista03)
  
  como pode-se notar que cada conjunto dividido em grupos por split e lembrando que cada divisao de grupo como essa sera considerado como uma nova lista como demonstrado no exemplo
+
+a divisao por classes utilizando o split é essencial para achar um grupo de caracteres em qualquer local de um conjunto de caracteres pois ao declarar por exemplo:
+nome = str(input('Digite seu nome completo: '))
+e esse nome tenha as seguintes caracteres: Luisa Souza Rocha de Almeida
+como faria para que fosse printado somente o Souza ou Rocha?
+ai entra o .split()
+basicamente voce cria uma declaração pra ele como:
+separa = nome.split() ou grupo = nome.split() tanto faz
+o essencial que ao utilizar ele pedindo pra que ele te de as caracteres que estao presentes em seus grupos ele vai encontrar com exatidao, entao por exemplo, em Luisa Souza Rocha de Almeida existem 5 grupos de caracteres: Luisa 1 Souza 2 Rocha 3 de 4 Almeida 5; ao pedir que o split te devolva o resultado do grupo 4, 3 tanto faz, ele vai te entregar com exatidao a quantidade desse grupo
+print(separa[0], len(separa[0])) 
+ou 
+print(grupo[3], len(grupo[3])) 
+aqui basicamente eu to pedindo aos metodos [] e len() que me entreguem as informaçoes dos respectivos grupos criados pelo split que estao dentro de [] e () que eu numerei com 0 e 3  .
+
  
 
 '-'.join(frase)
@@ -126,6 +152,6 @@ nesse método join o que acontece que ele pega os espaços e os unem com um tra�
 
 tambem podendo ficar assim:
 
--|C|-|u|-|r|-|s|-|o|- -|e|-|m|- -|V|-|i|-|d|-|e|-|o|- -|P|-|y|-|t|-|h|-|o|-|n|-
+-|C|-|u|-|r|-|s|-|o|- -|e|-|m|- -|V|-|i|-|d|-|e|-|o|- -|P|-|y|-|t|-|h|-|o|-|n|- 
 
-seguindo a mesma logica porem agora com traço dividindo cada letra
+seguindo a mesma logica porem agora com traço dividindo cada letra  
