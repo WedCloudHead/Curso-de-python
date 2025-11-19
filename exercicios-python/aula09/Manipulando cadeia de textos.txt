@@ -15,7 +15,7 @@ letra e espaço recebe um índice que são numeros:
 de acordo com essa representação, pode-se notar que cada letra recebe uma numeração
 incluindo os espaços entre elas, obtendo um total de 21 caracteres incluindo 0
 
-tecnica de fatiamento:
+(tecnica de fatiamento):
 
 frase[9] 
 (o simbolo [] faz parte de um identificador de uma estrutura de dados chamada lista
@@ -50,7 +50,7 @@ nesse exemplo entende-se que você quer que o python comece no 9, o espaço vazi
 Video Python (V e P h) 
 
 
-Análise:
+(Análise):
 
 nada mais é do que o ato de investigar, analisar essa string, saber quantos espaços tem, quantas letras maiúsculas e minusculas há, etc;
 
@@ -83,7 +83,7 @@ nesse exemplo ele procurara dentro da string a palavra Android mas como essa pal
 nesse exemplo você esta perguntando se existe a palavra Curso dentro da string mas diferente de mostrar o numero onde começa essa frase ele apenas retornara (true) que quer dizer que sim, existe essa palavra dentro da string, essa é função do operador in em python, responder se o que você esta procurando é true ou false, verdadeiro ou falso.
 
 
-Transformação:
+(Transformação):
 
 via de regra uma lista de string é imutável, porem é possível alterar ela através de alguns métodos, como por exemplo:
 
@@ -116,7 +116,7 @@ frase.lstrip()
 também análogo ao anterior, agora retirando os espaços do final esquerdo da string, esse l antes de string significa (left)
 
 
-Divisão:
+(Divisão):
 
 frase.split()
 por padrão o método split divide a string pegando como base seus espaços entre as palavras, nesse caso ficaria assim:

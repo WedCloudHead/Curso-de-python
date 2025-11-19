@@ -36,7 +36,23 @@ print('Seu primeiro nome é {} e ele tem {} letras'.format(separa[0], len(separa
 
 print('Seu segundo nome é {} e ele tem {} letras'.format(separa[1], len(separa[1])))
 
+#treinando mais um pouco:
 
+nome = str(input('Digite um Nome completo: ')).strip()
+
+grupo = nome.split()
+
+print('Seu nome em maiusculas é {},\n seu nome em minusculas é {},\n ao todo seu nome tem {} letras,\n seu primeiro nome tem {} letras '.format(nome.upper(), nome.lower(),len(nome) - nome.count(' '), nome.find(' ')))
+
+print(f'Seu nome em maiusculas é {nome.upper()}')
+
+print(f'Seu nome em munusculas é {nome.lower()}')
+
+print(f'seu primeiro nome é {nome.find(' ')}')
+
+print(f'seu nome ao todo tem {len(nome) - nome.count(' ')}')
+
+print(f'seu primeiro nome é {grupo[0] }')
 
 
 
@@ -45,7 +61,7 @@ print('Seu segundo nome é {} e ele tem {} letras'.format(separa[1], len(separa[
 #Linha 30)
 #importantissimo gravar essa forma de conjulgar os metodos
 #como nesse exemplo em que eu quero que o python leia somente a quantidade de letras no nome
-#ignorando os espaços, entao usasse os metodos dessa forma:
+#ignorando os espaços, entao usa-se os metodos dessa forma:
 #print('Seu nome tem ao todo {} letras'.format(len(nome) - nome.count(' ')))
 #lembrando que len(nome) é usado para analizar os caracteres de forma integral contando os espaços
 # e ao adicionar - nome.count(' ') ou seja - = menos, nome.count() = metodo de contagem, (' ') = aspas com espaço dentro

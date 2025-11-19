@@ -27,6 +27,14 @@ print('SILVA' in nome.upper())
 print('silva' in nome.lower())
 
 
+#treinando mais um pouco:
+
+Nome = str(input('Digite seu nome completo\n para que possamos ver se seu nome\n tem os sobre nomes mais comuns\n no brasil: ')).strip()
+
+print('SILVA' in Nome.upper(), 'ROCHA' in Nome.upper(), 'TEIXEIRA' in Nome.upper(), 'SANTOS' in Nome.upper())
+
+print('silva' in Nome.lower(), 'rocha' in Nome.lower(), 'teixeira' in Nome.lower(), 'santos' in Nome.lower())
+
 
 
 #extra:

@@ -15,12 +15,18 @@ cidade = str(input('Digite o nome de uma cidade da forma que você quiser: ')).s
 
 print(cidade[:5].upper() == 'SANTO')
 
-separa = cidade.split()
 
-#Uma forma de aprimorar o codigo caso a palavra santo não apareça somente no inicio do nome.
-#(lembrando que foi feito por mim entao pode haver erros    )
+#treinando um pouco:
 
-print(separa[0], separa[1].upper() == 'SANTO')
+Cidade = str(input('Digite um nome de uma cidade\n para que o programa verifique se nela existe a palavra Santo ou São: ')).strip()
+
+print(Cidade[:5].upper() == 'SANTO', Cidade[:3].upper() == 'SÃO')
+print()
+
+
+
+
+
 
 #Extra: 
 

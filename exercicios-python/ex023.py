@@ -18,7 +18,7 @@ print('Nesse numero tem:',(numero[1]), 'centenas')
 
 print('Nesse numero tem:',(numero[0]), 'milhar')
 
-#dessa forma que eu desenvolvi que acredito ser a forma que qualquer pessoa pense logo de cara não resolve totalmente o problema pois do jeito que esta, o programa é capaz apenas de identificar e nomear 4 digitos da ordem numerica, deixando uma brecha clara e rigorosa.
+#dessa forma que eu desenvolvi que acredito ser a forma que qualquer pessoa pense logo de cara, não resolve totalmente o problema pois do jeito que esta, o programa é capaz apenas de identificar e nomear 4 digitos da ordem numerica, deixando uma brecha clara e rigorosa.
 
 
 #Como professor demonstrou:
@@ -37,4 +37,14 @@ print(' Unidade: {} \n Dezena: {} \n Centena: {} \n Milhar: {} '.format(uni, dez
 #Extra:
 
 #importante notar que a forma mais correta e otimisavel de se resolver esse problema seria utilizando funções e variaveis porem ainda não aprendemos isso ainda entao o professor resolveu o problema de uma forma matematica, nada mais que contas simples de divisão inteira (//) mais o resto da divisão (%) como todos estão por 10 sempre vai ser a divisão inteira considerando "10 por cento" desse valor da divisão inteira, sendo impossivel errar assim.
- 
+
+
+#treinando mais um pouco:
+num = int(input('Digitando um numero qualquer: '))
+unidades = num // 1 % 10
+dezenas = num // 10 % 10
+centenas = num // 100 % 10 
+milhares = num // 1000 % 10
+centena_de_mil = num // 100000 % 10
+
+print(f'{unidades}, {dezenas}, {centenas}, {milhares}, {centena_de_mil}')
