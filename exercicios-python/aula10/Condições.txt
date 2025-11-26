@@ -1,0 +1,47 @@
+Condições
+
+condições nas linguagens de programação é o que eu chamaria de néctar do conceito de 
+lógica e lógica de programação, é os primeiros passos para começar a abordar conceitos 
+sobre se(if) se não(else) se não, se(else if), dentre outros é onde sua lógica começa a 
+trabalhar de fato pois você começa a pensar não só nas estruturas e nas indentações dos 
+códigos mas também nas suas condições logicas.
+
+1)
+um programa python assim como todos os outros são obrigados a seguir uma estrutura de 
+execução de cima pra baixo, uma estrutura sequencial, porem é importante entender que nem 
+sempre todo programa ira executar todos os comandos em sequencia e é ai que entra as 
+condições, onde você abre seu leque a possibilidades, dentro de um programa para que seja considerado uma condição é preciso ter no mínimo duas condições, duas possibilidades.
+
+É importante entender que dentro de blocos de comandos em condições, blocos com if e else
+por exemplo, o python ele interpreta sempre uma condição em detrimento de outra, então, se
+por acaso no primeiro bloco if as condições forem tomadas como verdadeiras o 
+programa automaticamente executa esse bloco, se não ele o toma como falso e passa pro próximo bloco, o else, para ver ele ira satisfazer como verdadeiro as condições necessárias.
+
+Também é importante entender que dentro dos blocos de comandos existe uma indentação ou seja
+python sempre respeita essa indentação onde os comandos que estejam a direita dos blocos de 
+comandos sempre vão acontecer independente se o if ou else forem verdadeiros ou falsos,
+exemplo:
+
+comando.siga()
+ se comando.esquerda()
+    comando.siga()
+    comando.direita()
+    comando.siga()
+ senão
+    comando.siga()
+    comando.esquerda()
+    comando.siga()
+comando.pare()
+
+percebe-se que o primeiro e ultimo comando: comando.siga() e comando.pare() estão mais a 
+esquerda dos outros comandos, eles são os comandos que aconteceram ou seja, serão sempre 
+executados pelo python, independente se os blocos dentro deles forem true ou false.
+
+
+
+
+
+extra:
+
+todo método tem () no final
+
