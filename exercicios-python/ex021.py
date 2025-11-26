@@ -46,21 +46,4 @@ play(musica)
 
 #(LEMBRANDO QUE PRA ATIVAR O AMBIENTE VIRTUAL O COMANDO É ESSE: source .venv/bin/activate )
 
-#(PARA DESATIVAR O COMANDO É ESSE: deactivate )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#(PARA DESATIVAR O COMANDO É ESSE: deactivate )    
