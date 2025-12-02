@@ -27,3 +27,14 @@ else:
 #Extra:
 
 #É um exercicio de execussão simples porem eu pequei na matematica, por não saber que o resto de qualquer numero par divido por 2 sempre é 0 e o resto de qualquer numero impar divido por 2 sempre é 1, me fez não saber como montar a estrutura logica para o funcionamento do programa.
+
+
+#treino rapido:
+
+num = int(input('Digite um numero pra ver se ele é impar ou par: '))
+resul = num % 2
+
+if resul == 0:
+    print('É par')
+else:
+    print('É impar')
