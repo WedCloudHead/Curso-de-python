@@ -1,7 +1,7 @@
 Condições
 
 condições nas linguagens de programação é o que eu chamaria de néctar do conceito de 
-lógica e lógica de programação, é os primeiros passos para começar a abordar conceitos 
+lógica e lógica de programação, são os primeiros passos para começar a abordar conceitos 
 sobre se(if) se não(else) se não, se(else if), dentre outros é onde sua lógica começa a 
 trabalhar de fato pois você começa a pensar não só nas estruturas e nas indentações dos 
 códigos mas também nas suas condições logicas.
