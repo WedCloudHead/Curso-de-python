@@ -2,8 +2,8 @@ Condições
 
 condições nas linguagens de programação é o que eu chamaria de néctar do conceito de 
 lógica e lógica de programação, são os primeiros passos para começar a abordar conceitos 
-sobre se(if) se não(else) se não, se(else if), dentre outros é onde sua lógica começa a 
-trabalhar de fato pois você começa a pensar não só nas estruturas e nas indentações dos 
+sobre se(if) se não(else) se não, se(else if), dentre outros, é onde sua lógica começa a 
+trabalhar de fato, pois você começa a pensar não só nas estruturas e nas indentações dos 
 códigos mas também nas suas condições logicas.
 
 1)
@@ -15,10 +15,10 @@ condições, onde você abre seu leque a possibilidades, dentro de um programa p
 É importante entender que dentro de blocos de comandos em condições, blocos com if e else
 por exemplo, o python ele interpreta sempre uma condição em detrimento de outra, então, se
 por acaso no primeiro bloco if as condições forem tomadas como verdadeiras o 
-programa automaticamente executa esse bloco, se não ele o toma como falso e passa pro próximo bloco, o else, para ver ele ira satisfazer como verdadeiro as condições necessárias.
+programa automaticamente executa esse bloco, se não ele o toma como falso e passa pro próximo bloco, o else, para ver se ele ira satisfazer como verdadeiro as condições necessárias.
 
 Também é importante entender que dentro dos blocos de comandos existe uma indentação ou seja
-python sempre respeita essa indentação onde os comandos que estejam a direita dos blocos de 
+python sempre respeita essa indentação onde os comandos que estejam a esquerda dos blocos de 
 comandos sempre vão acontecer independente se o if ou else forem verdadeiros ou falsos,
 exemplo:
 

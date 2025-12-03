@@ -70,7 +70,7 @@ significa: conte as caracteres ignorando todos os espaços e considerando apenas
 formula = len(nome) - nome.count(' '))
 
 frase.count('o',0,13)
-esse exemplo é a junção da análise com fatiamento que o que ele faz é contar quantas letras o há dentro da string de 0 a 13, lembrando sempre que a ultima não    conta.
+esse exemplo é a junção da análise com fatiamento que o que ele faz é contar quantas letras o há dentro da string de 0 a 13, lembrando sempre que a ultima não conta.
 
 frase.find('deo')
 o python ira mostrar quantas vezes ele encontra as palavras deo dentro da cadeia string
@@ -104,7 +104,7 @@ um pouco parecido com anterior porem ele pega todas as primeiras letras após os
 
 frase.strip()
 funciona como organizador de espaços inúteis, ou seja, se na string tivesse antes de Curso 3 espaços e depois de Python uns 5 espaços, o que esse método strip faz é desconsiderar esses espaços desnecessários mantendo so o espaço de dentro da string que separam as letras.
-(importante lembrar que o strip tamebm é usado na declaração que vai ser analizada, exemplo: 
+(importante lembrar que o strip tambem é usado na declaração que vai ser analizada, exemplo: 
 nome = str(input('Digite seu nome completo: ')).strip() 
 percebe-se que strip foi adicionado ao fim da declaração, porem é importante entender que ele foi usado pois a declaração esta em formato input tambem, ou seja a pessoa que for escrever pode colocar espaços desnecessários, caso nao seja input não é 
 necessario o strip logo apos a declaração inicial)
@@ -125,7 +125,7 @@ por padrão o método split divide a string pegando como base seus espaços entr
  0  1  2  3  4    0  1     0  1  2  3  4     0  1  2  3  4  5 
    (lista00)    (lista01)    (lista02)           (lista03)
  
- como pode-se notar que cada conjunto dividido em grupos por split e lembrando que cada divisao de grupo como essa sera considerado como uma nova lista como demonstrado no exemplo
+ como pode-se notar que cada conjunto é dividido em grupos por split e lembrando que cada divisao de grupo como essa sera considerado como uma nova lista como demonstrado no exemplo
 
 a divisao por classes utilizando o split é essencial para achar um grupo de caracteres em qualquer local de um conjunto de caracteres pois ao declarar por exemplo:
 nome = str(input('Digite seu nome completo: '))

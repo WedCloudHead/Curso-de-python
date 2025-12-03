@@ -42,14 +42,14 @@ dizendo para python que dessa forma voce quer especificamente aquele
 modulo ou aquela funcionalidade.
 
 
-outro exemplo de biblioteca muito utilizadp em python é math(matematica)
+outro exemplo de biblioteca muito utilizado em python é math(matematica)
 
 nesse modulo existe algumas varias atribuiçoes como:
 math(matematica)
  ceil(teto/arrendondar pra cima)
   floorchão/arrendondar pra baixo)
    trunc(truncar um numero)
-      pow(potencia0
+      pow(potenciação
        sqrt(raiz quadrada)
          factorial(fatorial)
 
