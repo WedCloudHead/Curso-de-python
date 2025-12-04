@@ -1,0 +1,32 @@
+Cores no terminal
+
+
+Em python é possivel trabalhar sobre o mesmo tema ou objetivo de diversas
+formas diferentes e nesse exemplo será demonstrado o padrão ANSI que é um 
+padrão de normalização internacional e contem os escape sequences que funcionam em varios ambientes e nesse exemplo sera o terminal.
+
+a formula dele a principio parece dificil e complexa mas tudo não passa de 
+uma sequencia de padroes bem organizados: \033[0;30;41 essa é um exemplo de 
+formula usada para representar cores no terminal, agora vamos quebralo.
+
+\033[ esse é como se fosse o comando que chama o metodo ou que diz ao
+terminal que aqui sera usado uma cor
+
+dentre o inicio do comando e o final existem as classificações: style, text,
+back e elas são a representação numerica da modificação que sera feita no 
+iten em questao, ex: 0;30;41 cada numero anterior a o ponto e virgula representa as caracteristicas citadas 0; style, 30 text, 41 back, nesse exenplo pode se ler da seguinte forma: o item tera um estilo 0, ou seja, sem
+estilo, um texto 30, quer dizer que dentro da paleta de cores tem uma que 
+representa o numero 30 para o texto e 41 fundo, que significa a cor de fundo
+que tera o item.
+
+e pra fechar o codigo é usado a letra m, ficando o 
+codigo completo da seguinte forma: 
+\033[ 0; 33; 44; m  
+so que tudo junto: 
+\033[0;33;44;m 
+e assim se adiciona cor ao terminal.
+
+Continuação prática do conteudo no arquivo 
+aula011.py 
+
+
