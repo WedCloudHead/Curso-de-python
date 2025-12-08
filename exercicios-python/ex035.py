@@ -33,5 +33,8 @@ else:
 
 #sobre a resolução ambas resolveram o problema com maestria, tanto a minha quanto a do professor, apesar de terem tido diferenças na construção das linhas de condições, e a unica duvida que ficou foi por que o professor usou float para declarar os segmentos e não int? Acredito que seja possivel dar valores de segmentos com pontos flutuantes como 3.5 + 4.7 + 5 para analizar se é possivel ser feita a formação de um triangulo!
 
-#No mundo dos triangulos existem algumas formações geometricas formadas por diferentes tipos de segmentos de triangulos isosceles, escaleno e equilatero.
+#No mundo dos triangulos existem algumas formações geometricas formadas por diferentes tipos de segmentos de triangulos: 
+#isosceles: todos os lados iguais 
+#escaleno: dois lados iguais
+#equilatero: todos os lados diferentes
 
