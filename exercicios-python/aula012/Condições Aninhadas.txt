@@ -1,0 +1,35 @@
+Condições Aninhadas
+
+O aninhamento pode ser entendido como a adição de mais vias ou de mais condições dentro
+de uma estrutura de código, onde não se trata mais somente de if e else mas também elif
+que significa if e else juntos e assim se representa as condições aninhadas possibilitando
+agora uma estrutura muito mais complexa de possibilidades dentro de um programa python.
+
+Numa condição simples teríamos algo como:
+
+nome = str(input('Escolha um nome: '))
+if nome == Eduardo:
+ print('Olá Eduardo')
+else:
+ print('Não é o Eduardo')
+ 
+Numa condição aninhada teríamos algo como:
+
+nome = str(input('Escolha um nome: '))
+if nome == Eduardo:
+ print('Olá Eduardo')
+elif nome != Eduardo and nome == Lucas:
+ print('Qual seu nome?') 
+ print('Qual sua idade?')
+ print('Você tem irmãos?')
+elif nome in 'Ana Luísa Roberta':
+ print('Belo nome feminino')
+else:
+ Print('Tenha uma boa tarde?)
+ 
+É possível notar uma complexidade maior nas condições do código onde dessa forma já é 
+possível resolver problemas mais complexos e com condições mais exigentes, lembrando que else é uma condição opcional em algumas situações.
+
+Continuação prática da aula no aula012.py
+
+
