@@ -27,7 +27,7 @@ else:
     print('Essa opção é inválida, tente novamente!')
 
 
-#Anotação sobre a aula:
+#Anotações sobre esse problema:
 
 #Sobre a linha 15 a 18, é usado um novo metodo no print na linha 15, um print com ''' ''' três aspas simples de cada lado, isso nada mais é que uma forma mais livre de você escrever seu print no terminal, ou seja, se estiver escrevendo algo em uma linha e pular pra linha de baixo, quando for printado no terminal também estara na linha de baixo.
 

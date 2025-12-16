@@ -27,3 +27,24 @@ elif imc >=30 and imc <= 40:
     print(f'Você não está dentro de um peso ideal em relação a sua altura, seu IMC é de {imc:.2f} Você está em Obesidade!')
 else:
     print(f'Você definitivamente não está em um peso ideal em relação a sua altura, seu IMC é de {imc:.2f} Você está em Obesidade Morbida!')
+
+    #Como professor demonstrou:
+
+PESO = float(input('Qual é o seu peso? (Kg) '))
+ALTURA = float(input('Qual é a sua altura? (m) '))
+IMC = PESO / (ALTURA ** 2)
+print(f'O IMC dessa pessoa é de: {IMC}')
+if IMC < 18.5:
+    print('Você está abaixo dp peso normal')
+elif 18.5 <= IMC < 25:
+    print('Parabéns, você está na faixa de peso normal')
+elif 25 <= IMC < 30:
+    print('Você está em sobrepeso')
+elif 30 <= IMC < 40:
+    print('Você está em obesidade!')
+elif IMC >= 40:
+    print('Você está em obesidade mórbida, cuidado!')
+
+#Extra:
+
+#Não tem muito o que falar sobre a resolução dessa aula, trabalho com condições aninhadas puras e de acordo com as teorias da aula 12, sempre ressaltando da estrutura lógica do professor em que ele reduz muito uma linha de condições utilizando os métodos permitidos pelo python3.

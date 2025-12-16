@@ -17,7 +17,7 @@ else:
 
 #Como professor demonstrou:
 
-print('-=-'*10)
+print('-=-'*10) 
 print('Analisador de Triagulos')
 print('-=-'*20)
 r1 = float(input('Primeiro segmento: '))
