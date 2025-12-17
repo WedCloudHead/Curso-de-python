@@ -101,7 +101,7 @@ elif comp == 2:
 #Anotações:
 #Eu estava em dúvida quando fiz meu programa se tinha alguma maneira de 
 #transformar o randint do import que é em números para letras e sim, o 
-#professor acabou de demonstrar na linha 50 com:
+#professor acabou de demonstrar na linha 51 com:
 #.format(intens[comp])
 #ele primeiro declara na linha 48 itens com 3 itens aleatórios e em 
 #seguida cria esse .format 
