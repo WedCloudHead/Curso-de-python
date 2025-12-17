@@ -1,0 +1,4 @@
+#Crie um programa que leia uma frase qualquer e diga se ela é um palindromo, 
+#desconsiderando os espaços.
+
+#Ex: apos a sopa (sem espaços de tras pra frente)

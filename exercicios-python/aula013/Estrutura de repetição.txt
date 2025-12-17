@@ -1,0 +1,79 @@
+Estrutura de repetição for
+
+1)
+Essa matéria em python é muito boa e útil para adicionar mais precisão e controle em 
+problemas grandes em programação, ou seja, essa estrutura de repetição trabalha da 
+seguinte forma;
+Se existe uma determinada sequência de comandos específicos para que possa ser realizado
+uma condição por exemplo, ficaria inviável para o programador escrever na mão cada 
+determinada sequência caso essa sequência fosse muito grande como por exemplo 
+contar ate 10 mil e depois executar uma condição.
+Para o programador escrever uma sequencia de comandos do 0 ate 10k levaria muito tempo e 
+seria totalmente inviável, aqui que entra o for, com ele é possível criar uma espécie de 
+contador automático ou um loop controlado de quantas vezes você quiser que seu programa 
+execute uma sequência de comandos antes de partir para o próximo comando.
+
+Exemplo ilustrativo:
+
+01) laço c no intervalo(0, 10):    -->  fica -->     for c in ranged(0, 10):
+02)   sequência                                        sequência
+03) executa                                          executa
+
+linha 01 existem as declarações, onde eu determino o que será feito para o python
+linha 02 é a variável que recebera os comandos da linha 01
+linha 03 é a execução que vem após os comandos sequenciais anteriores.
+
+2)
+Também é possível trabalhar com estruturas de repetições da qual precisem executar mais de 1
+único comando específico, como no exemplo que eu dei a cima a sequência seria contar de 0 a 
+10k, o comando contar é apenas um e se fosse para contar e cada 2 algarismos fosse preciso
+fazer uma soma entre seu antecessor e seu sucessor, por exemplo:
+1, 2 (1 + 2 = 3) 
+3, 4 (3 + 4 = 7) 
+5, 6 (5 + 6 = 11) 
+7, 8... sucessivamente até 10k e então execute tal condição,novamente seria inviável fazer na mão, graças ao for também é possível automatizar isso;
+
+Exemplo ilustrativo:
+
+01) laço c no intervalo(0, 10)   --> fica -->    for c in ranged(0, 10):
+02)    sequencia                                   sequencia
+03)    sequencia                                   sequencia
+04) execute                                      execute
+05) execute                                      execute
+
+linha 01 assim como no anterior é a declaração, onde é determinada o que sera feita
+linha 02 e 03 são também as variáveis que receberão os comandos da linha 01
+linha 04 e 05 são as execuções que serão feitas após as sequências anteriores
+
+3)
+Como a estrutura de repetição serve também para adicionar um nível a mais de complexidade 
+e precisão aos comandos que devem ser executados dentro de seus laços, é possível adicionar
+condições dentro de uma estrutura de repetição também, ou seja, seguindo um pouco do exemplo
+anterior, suponhamos que agora em vez de somente contar até 10k de um em um e somando seus 
+antecessores e seus sucessores e eu queira também que sempre que derem dois pares de soma seja adicionado um sinal de ! ao final da conta, por exemplo:
+1, 2 (1 + 2 = 3) 
+3, 4 (3 + 4 = 7 !) 
+5, 6 (5 + 6 = 11) 
+7, 8 (7 + 8 = 15 !)
+9, 10 (9 + 10 = 19)
+10, 11 (10 + 11 = 21 !)... sucessivamente até 10k e em sequência execute um comando qualquer
+assim como nos exemplos anteriores, também se torna inviável para o programador escrever isso
+manualmente até 10k e ai entra as condições indentadas dentro das estruturas de repetições;
+
+Exemplo ilustrativo:
+
+01) laço c no intervalo(0, 10)    --> fica -->    for c in ranged(0, 10):
+02)   se pares                                     if pares
+03)      simbolo                                      simbolo
+04)   sequencia                                    sequencia
+05)   sequencia                                    sequencia
+06)  execute                                      execute 
+07)  execute                                      execute
+ 
+linha 01 declaração onde é determinada tal ordem
+linha 02 a introdução do if que só será executado quando tal condição for atendida.
+linha 03 a resposta sobre o que o if deve fazer quando a condição for atendida
+linhas 04 e 05 são as sequencias ordenadas pela declaração
+linhas 06 e 07 são as execuções após as sequencias serem concluidas
+
+Continuação na aula 013.
