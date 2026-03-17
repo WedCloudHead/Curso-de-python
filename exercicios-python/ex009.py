@@ -27,7 +27,8 @@ print('-' * 12)
 
 #essa forma de resolver o problema diretamente no print quando é um problema mais simples é muito eficiente na hora de poupar tempo e um programa que tenha muitas linhas
 
-#os parametros :2 servem para mostrar o compilador que ele deve ler os numeros escohlidos dentro {} que estao com :2 como se estivesse sempre considerando dois digitos; 
+#os parametros :2 servem para mostrar o compilador que ele deve ler os numeros escolhidos dentro {} que estao com :2 como se estivesse sempre considerando dois digitos:
+ 
 #o que era assim:     fica assim:
 
 #33 x 1 = 33          33 x  1 = 33 
