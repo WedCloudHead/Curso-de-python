@@ -31,7 +31,7 @@ print('Fim')
 
 
 n = int(input('Digite um número: '))
-for w in range(10, n+1, -1):
+for w in range(10, n-1, -1):
     print(w)
 print('Fim')
 

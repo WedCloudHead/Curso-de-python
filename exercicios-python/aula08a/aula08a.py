@@ -32,16 +32,16 @@ print('a raiz de {} é igual a {:.2f} '.format(num, floor(raiz)))
 #Importante:
 
 #1)
-#na linha 1 é possivel ver a importação math da biblioteca: import math
-#é importante entender que na linha 3 ao utilizar o modulo: math.sqrt so é possivel graças a esse import feito na linha 1 pois sem ele o python não conseque carregar da sua biblioteca essa funcionalidade.
+#na linha 4 é possivel ver a importação math da biblioteca: import math
+#é importante entender que na linha 6 ao utilizar o modulo: math.sqrt so é possivel graças a esse import feito na linha 4 pois sem ele o python não conseque carregar da sua biblioteca essa funcionalidade.
 
-#na linha 4 em format(num, math.ceil(raiz))
+#na linha 7 em format(num, math.ceil(raiz))
 #a adição do modulo math.ceil(raiz) so possivel graças ao import math tambem, nota-se que ao usar esse modulo o compilador python ira automaticamente/matematicamente arrendondar (para cima) todos os resultados de raizes quadradas.
 
 
 #2)
 #na linha 14 é importante notar que a forma de declarar mudou de um import para o outro, no import simples usou:
-#aiz = math.sqrt(num)
+#raiz = math.sqrt(num)
 #enquanto no import especifico usou:
 #raiz = sqrt(num)
 #pois no segundo import não precisava especificar sqrt pois na linha 12 ja esta especificado.
@@ -50,7 +50,7 @@ print('a raiz de {} é igual a {:.2f} '.format(num, floor(raiz)))
 #3)
 #na linha 22 é adicionado o modulo floor que especifica ainda mais o import de math e tras da biblioteca somente esses dois modulos
 
-#é tambem da pra ver a diferença de declaração nas linhas 25, 15 e 7 onde na 25 não se usa math.floor(raiz) e sim somente floor(raiz) pois o math. so é preciso quando não se especifica no import inicial como é a diferença entre as linhas 4 e 22.
+#e tambem da pra ver a diferença de declaração nas linhas 25, 15 e 7 onde na 25 não se usa math.floor(raiz) e sim somente floor(raiz) pois o math. so é preciso quando não se especifica no import inicial como é a diferença entre as linhas 4 e 22.
 
 
 #extra:

@@ -40,4 +40,4 @@ print(f'O somatório de todos os valores foi de {s}')
 #linha 28, nesse caso 4.
 #isso fara com que s some com mais n várias vezes
 #até completar as 4x.
-
+    

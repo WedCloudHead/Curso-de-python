@@ -15,7 +15,7 @@ execute uma sequência de comandos antes de partir para o próximo comando.
 
 Exemplo ilustrativo:
 
-01) laço c no intervalo(0, 10):    -->  fica -->     for c in ranged(0, 10):
+01) laço c no intervalo(0, 10):    -->  fica -->     for c in range(0, 10):
 02)   sequência                                        sequência
 03) executa                                          executa
 
@@ -35,7 +35,7 @@ fazer uma soma entre seu antecessor e seu sucessor, por exemplo:
 
 Exemplo ilustrativo:
 
-01) laço c no intervalo(0, 10)   --> fica -->    for c in ranged(0, 10):
+01) laço c no intervalo(0, 10)   --> fica -->    for c in range(0, 10): 
 02)    sequencia                                   sequencia
 03)    sequencia                                   sequencia
 04) execute                                      execute
@@ -62,7 +62,7 @@ manualmente até 10k e ai entra as condições indentadas dentro das estruturas 
 
 Exemplo ilustrativo:
 
-01) laço c no intervalo(0, 10)    --> fica -->    for c in ranged(0, 10):
+01) laço c no intervalo(0, 10)    --> fica -->    for c in range(0, 10):
 02)   se pares                                     if pares
 03)      simbolo                                      simbolo
 04)   sequencia                                    sequencia

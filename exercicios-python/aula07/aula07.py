@@ -17,7 +17,7 @@ print('os seguintes resultados de: ', (n1), (n2), (n3), (n4), (n5), (n6), (n7), 
 
 #1 ( )
 #2 **
-#3 * / // %
+#3 * / // % 
 #4 + -
 
 #sempre essa ordem a ser seguida nos problemas aritmeticos em python, lembrando que num possivel problema que apareça todos os operadores de uma so vez, basta seguir restritamente a ordem, primeiro resolve todos os parenteses, depois a potencia, depois mult, div, div int, div res, soma, sub
