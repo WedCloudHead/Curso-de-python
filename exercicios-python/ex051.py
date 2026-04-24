@@ -55,10 +55,8 @@ print('Acabou!')
 
 #Sobre a segunda resolução:
 #Já é possivel notar um avanço no raciocinio lógico usado nesse programa pois eu 
-#consegui não só resolver o problema como entregar separadamente os 10 
-#primeiros termos da PA como é pedido no desafio, o problema é que ainda sim
-#o programa foi resolvido quase que como quem sabe "daria pra ter feito melhor"
-#O programa cumpre seu papel mas poderia ter tido uma estrutura indentada mais sofisticada.
+#consegui resolver o problema sobre entregar a PA, porém ainda não consegui entregar 
+#separadamente os 10 primeiros termos da PA.
 
 #Sobre a resolução do professor:
 #É onde cobre o buraco da minha segunda resolução, o programa do professor 
