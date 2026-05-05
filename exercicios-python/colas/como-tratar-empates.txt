@@ -1,0 +1,31 @@
+Montei esse pedaço de código como exemplo:
+
+
+maior_nomes_nota = []
+maior_nota = 0
+menor_nota = 0
+
+
+    if c == 0:
+        maior_nota = nota
+        maior_nomes_nota = [nome]
+        menor_nome_nota = nome
+        menor_nota = nota
+    else:
+        if nota > maior_nota:
+            maior_nota = nota
+            maior_nomes_nota = [nome]
+        elif nota == maior_nota:
+            maior_nomes_nota.append(nome)
+          
+        if nota < menor_nota:
+            menor_nota = nota
+            menor_nome_nota = nome
+
+
+
+
+Basicamente a lista de maior nome sera consequentemente a lista com maiores nomes de empate, caso os tenha, a diferença é que ela ira se atualizando se realmente tiver empates.
+então ela começa recebendo uma lista como (na linha 4) e na primeira passada do for já adiciona ela como (na linha 11), depois adiciona ela novamente como maior nota igual na (linha 17)
+e por fim verifica em empate somando tudo como na (linha 19), então o que essa lista faz é: "tem maior nota? se sim atualiza, se é empate soma na lista", caso queira adicionar as notas
+junto com os nomes basta fazer a mesma coisa porem com uma nova lista com nome tipo "maiores__notas" e ir atualizando ou somando. 

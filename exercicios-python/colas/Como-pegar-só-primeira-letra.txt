@@ -1,0 +1,18 @@
+pedaço do código que serve de exemplo sobre como pegar somente a primeira letra no input:
+
+
+while True:
+    computador = randint(0, 10)
+    while True:
+        escolha = (input('Escolha entre Par[P] ou Impar[I]: ')).strip().upper()
+        if not escolha:
+            print('Escolha entre P ou I')
+            continue
+        
+        primeira = escolha[0]
+
+        if primeira not in 'PI':
+            print('Escolha entre P ou I')
+            continue
+        escolha = primeira
+        break

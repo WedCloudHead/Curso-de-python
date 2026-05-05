@@ -1,0 +1,31 @@
+Para impedir que o Python aceite letras com acento (como "Á", "É", "Ç"), o método .isalpha() não é suficiente sozinho, pois, para o Python, acentos também são considerados letras.
+
+A forma mais robusta e simples de resolver isso é verificar se a letra escolhida está presente dentro de um conjunto contendo apenas o alfabeto básico (sem acentos).
+
+Aqui está o exemplo em um código:
+
+import string
+
+# string.ascii_uppercase contém 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+alfabeto_permitido = string.ascii_uppercase
+
+while True:
+    letra = input('Digite uma letra de A a Z: ').strip().upper()
+    
+    if not letra:
+        print('O campo não pode estar vazio')
+        continue
+    
+    if len(letra) != 1:
+        print('Digite apenas 1 letra')
+        continue
+    
+    # Verifica se a letra NÃO está no alfabeto básico (A-Z)
+    
+    if letra not in alfabeto_permitido:
+        print('Digite apenas letras sem acento (A-Z)')
+        continue
+          
+    break   
+
+print(f'Fim da validação! A letra escolhida foi {letra}')

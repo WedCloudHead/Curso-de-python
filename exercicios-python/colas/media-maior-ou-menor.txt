@@ -1,0 +1,22 @@
+Pedaço de código como exemplo:
+
+acima_media_nomes = []
+
+
+
+media = soma_notas / 5
+
+
+for i in range(len(lista_notas)):
+    if lista_notas[i] > media:
+        acima_media_nomes.append(lista_nomes[i])
+
+
+        
+print(f'As notas acima da média são: {acima_media_nomes}')
+
+
+
+Quando for montar o for das listas com as notas para comparar quais estão acima ou abaixo da média, usa essa estrutura.
+nesse exemplo está sendo filtrada somente as notas acima da média, caso queira as abaixo, deve criar uma outra lista como na (linha 3) porem com nome apropriado.
+

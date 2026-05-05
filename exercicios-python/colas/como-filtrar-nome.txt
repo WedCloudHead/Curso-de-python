@@ -1,0 +1,27 @@
+Pedaço do código:
+
+
+while True:
+    nome = input('Digite seu nome: ').strip().lower()
+    if not nome:
+        print('Preencha o campo corretamente')
+        continue
+    break
+
+palavras = nome.split()
+
+resultado = []
+
+OBS: quando for validar isso no meio de varios while, basta colocar o for no final de tudo e no fim printar o nome_resultado que o nome saira Wederson da Silva Torres certinho <3  
+
+for p in palavras:
+    if p in ['da', 'de', 'do', 'das', 'dos']:
+        resultado.append(p)
+    else:
+        resultado.append(p.capitalize())
+
+nome_resultado = ' '.join(resultado)
+
+print(f'Nome {nome_resultado} cadastrado')
+
+

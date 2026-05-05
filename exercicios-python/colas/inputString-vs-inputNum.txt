@@ -1,0 +1,48 @@
+
+Quando se vai validar um input de String é mais tranquilo porque o proprio conversor já naturalmente lê tudo como String, então como na (linha 8) basta colocar somente input e sua validação em baixo if not, segue normalmente.
+
+
+while True:
+    computador = randint(0, 10)
+    while True:
+        escolha = (input('Escolha entre Par[P] ou Impar[I]: ')).strip().upper()
+        if not escolha:
+            print('Escolha entre P ou I')
+            continue
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+Quando se vai validar um número é preciso antes se atentar na conversão pois python irá ler o input diretamente como  string mesmo colocando int(input()), então como na (linha 31) primeiro cria uma váriavel com input, depois valida, depois crie uma outra variável que receba int() como na (linha 35) aí sim a valídação está 100%.
+
+
+while True:
+    try:
+        entrada = (input('Digite um número qualquer que seja maior que 0: '))
+        if not entrada:
+            print('O campo não pode estar vazio!')
+            continue
+        usuario = int(entrada)
+        if usuario <= 0:
+            print('O valor digitado precisa de maior que zero!')
+            continue
+    except ValueError:
+        print('Digite apenas números')
+        continue
+    
+    break
+print('Fim do programa!')
+
+
+
+

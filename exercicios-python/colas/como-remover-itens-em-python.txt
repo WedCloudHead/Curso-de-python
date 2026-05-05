@@ -1,0 +1,72 @@
+
+
+#COMO TIRAR ITENS DE DENTRO DE UMA LISTA:
+
+#Modo fatiamento:
+
+#numeros = [10, 20, 30, 40, 50]
+
+# Printa a lista sem o último elemento
+#print(numeros[:-1]) 
+# Saída: [10, 20, 30, 40]
+
+
+#Removendo permanentemente:
+
+#numeros = [1, 2, 3, 4, 5]
+
+#numeros.pop() # Isso remove o 5 da lista para sempre  (lembrando que .pop() sem nada dentro do () sempre remove o último item)
+
+#print(numeros)
+# Saída: [1, 2, 3, 4]
+
+
+#Usando loop:
+
+#numeros = [100, 200, 300, 400]
+
+#for n in numeros[:-1]:
+    #print(f"Número: {n}")
+
+# O 400 nem entrará no loop
+
+#Se voce sabe o valor que quer remover:
+ 
+#frutas = ["maçã", "banana", "uva", "cereja"]
+#frutas.remove("banana")
+
+#print(frutas) # Saída: ['maçã', 'uva', 'cereja']
+
+#Atenção: Se o número aparecer mais de uma vez, o .remove() tira apenas a primeira vez que ele aparecer.
+
+
+#Se voce sabe a posição(indice) que quer remover:
+
+#numeros = [10, 20, 30, 40]
+#numeros.pop(1) # Remove o número 20 (índice 1)
+
+#print(numeros) # Saída: [10, 30, 40]
+
+#Dica: Se você não colocar nenhum número no pop(), ele remove o último (como vimos antes).
+
+#Usando del:
+
+#lista = [0, 1, 2, 3, 4, 5, 6]
+
+#del lista[0]      # Remove o primeiro item
+#del lista[2:4]    # Remove do índice 2 até o 3 (uma fatia)
+
+#print(lista)
+
+
+#Extra:
+
+
+#Um erro comum para evitar:
+
+#Se você tentar dar um .remove(100) em uma lista que não tem o número 100, o Python vai dar um erro (ValueError). Por isso, é sempre bom garantir que o número está lá antes:
+#Python
+
+#if 100 in lista:
+    #lista.remove(100)
+

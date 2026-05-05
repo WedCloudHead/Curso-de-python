@@ -1,0 +1,88 @@
+Tabela de Verificação de Strings
+
+Método	Pergunta: "Todos os caracteres são..."	Exemplo True	Exemplo False
+
+.isalpha()	...apenas letras?	"Python"	"Python3"
+
+.isnumeric()	...números (ou equivalentes)?	"123"	"12.3"
+
+.isalnum()	...letras ou números?	"Python3"	"Python 3"
+
+.isdigit()	...dígitos numéricos?	"123"	"12.3"
+
+.isspace()	...apenas espaços/tabs/quebras?	" "	" a "
+
+.islower()	...todos minúsculos?	"python"	"Python"
+
+.isupper()	...todos maiúsculos?	"PYTHON"	"Python"
+
+.istitle()	...estilo título (Maiúscula inicial)?	"Python É Legal"	"python é legal"
+
+
+#Como exigir caracteres especiais separadamente:
+
+
+"""
+Como não existe um método embutido como .issymbol(), a forma mais precisa de validar se uma string contém apenas caracteres especiais (sem letras e sem números) é usar a biblioteca re (Expressões Regulares).
+
+As Expressões Regulares permitem que você crie um "padrão" e peça ao Python para verificar se a entrada corresponde a ele.
+A solução com re (Expressões Regulares)
+
+O padrão ^[^\w\s]+$ significa:
+
+    ^ : Início da string.
+
+    [^\w\s] : Qualquer caractere que não seja uma letra/número (\w) e não seja um espaço (\s).
+
+    + : Pelo menos um caractere.
+
+    $ : Fim da string.
+
+Python
+
+import re
+
+def verificar_apenas_especiais(texto):
+    # O padrão procura por tudo que NÃO é alfanumérico e NÃO é espaço
+    if re.match(r'^[^\w\s]+$', texto):
+        return True
+    return False
+
+entrada = input("Digite apenas caracteres especiais: ")
+
+if verificar_apenas_especiais(entrada):
+    print("Sucesso! Você digitou apenas caracteres especiais.")
+else:
+    print("Erro: A entrada contém letras, números ou espaços.")
+
+A alternativa "sem bibliotecas" (Lógica pura)
+
+Se você não quiser importar o módulo re, pode usar uma lógica de "exclusão" usando o método .isalnum() combinado com .isspace().
+
+A ideia é: "Se a string não for alfanumérica E não tiver espaços, então, por eliminação, ela só pode ser composta por símbolos".
+Python
+
+entrada = input("Digite apenas caracteres especiais: ")
+
+# Verifica se a entrada não está vazia
+if entrada and not entrada.isalnum() and not any(char.isspace() for char in entrada):
+    # Verifica se realmente não sobrou nenhuma letra ou número
+    # (O .isalnum() já nos dá essa garantia, mas é bom ser cuidadoso)
+    print("Sucesso! Apenas símbolos detectados.")
+else:
+    print("Erro: A entrada contém letras, números ou espaços.")
+
+Qual escolher?
+
+    Use re (Expressões Regulares): É a forma profissional, mais rápida e mais limpa. É o padrão utilizado em formulários de sites e sistemas de segurança para validar inputs.
+
+    Use a lógica pura: Se você está aprendendo a base da linguagem e quer entender como manipular os dados sem depender de bibliotecas externas.
+
+Uma observação importante: O que você considera "caractere especial"?
+
+    Se você considerar que um símbolo como @ é especial, mas uma pontuação como . ou , também é, o re vai aceitar ambos.
+
+    Se você quiser restringir a apenas alguns símbolos específicos (como apenas !, @, #), o re também faz isso facilmente alterando o padrão para ^[!@#]+$.
+"""
+
+
