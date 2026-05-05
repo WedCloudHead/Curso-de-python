@@ -1,0 +1,28 @@
+While estrutura de repetição
+
+
+Diferente da última estrutura de repetição FOR que é usado para quando você sabe o limite do seu laço como por exemplo:
+de 0 a 10, de 2 a 200, de 14 a 20. While entra quando esse limite é uma incógnita ou seja não se sabe o limite ou até mesmo 
+o início da estrutura.
+Chamado de estrutura de repetição com teste lógico, While é muito usado em problemas mais complexos em situações em que não 
+se é necessário ou não se é possível utilizar o FOR(estrutura de repetição com variável de controle); 
+
+Enquanto não:   |   while not:
+  condição      |     condição
+resultado       |   resultado 
+
+
+
+O uso do while também é muito útil ao combina-lo com condições, como por exemplo:
+
+enquanto não:                   enquanto não:               |   while not:                   while not:
+  Se verdadeiro:                  Se verdadeiro:            |     if verdadeiro:               if verdadeiro:
+    execute ação                    execute ação            |       execute ação                 execute ação   
+  Se verdadeiro:                  Se verdadeiro:            |     if verdadeiro:               if verdadeiro:
+    execute outra ação              execute outra ação      |       execute outra ação:          execute outra ação: 
+fim                             fim                         |   fim                          fim
+
+
+Lembrando que o not utilizado no exemplo é uma das variáveis possíveis para se usar nessa estrutura, o while é muito 
+versátil e pode ser atribuído em sua lógica outros paradigmas como True, False, None, ""(String vazia), [], (), {}, 
+(Coleções vazias); dentre muitas outras.
