@@ -1,0 +1,80 @@
+Sabemos que variáveis simples guardam uma informação na memória e que ao tentar atribuir qualquer outra informação a ela a anterior
+simplesmente se "rompe/desaparece" para que seja armazenado o novo valor ou a nova informação requerida; Mas é possível guardar mais 
+de uma ou várias informações dentro de uma só variável?
+A resposta é sim e são possíveis devido a três funções principais tuplas, listas e dicionários, todas elas carregam semelhanças entre 
+si com algumas nuances e o foco dessa aula é tuplas.
+
+As tuplas são variáveis compostas e (imutáveis) que permitem armazenar vários valores em uma mesma estrutura, acessíveis por chaves individuais, uma das formas de acessar esses valores é pelo método de índices.
+
+Índices:
+
+Dentro de uma tupla que guarda por exemplo 4 informações, cada elemento dentro dessa tupla é identificado por números que são os índices 
+da variável.
+Ex:
+
+lanche = ('hamburguer' , 'suco' , 'pizza' , 'pudim') -> variável = (0 , 1 , 2 , 3)
+
+e sabendo manipular corretamente os índices e valores, é possível acessar qualquer informação dentro de uma tupla.
+Ex:
+
+print(lanche) -> com esse print será acessado todos os valores dentro da tupla. 
+x
+print(lanche[2]) -> com esse print será acessado somente o índice 2 de dentro da tupla.
+x
+print(lanche[0:2]) -> com esse print será acessado o 1°(hamburguer) que está na posição 0, 2°(suco) que está na posição 1 e 3°(pizza) que está na posição 2, porém é importante lembrar que python nunca mostra o ultimo item solicitado, então mesmo que ele acesse o índice 2, ele nunca será printado e pizza nunca aparecera, a não ser que mude o pedido para algo como [0:3]
+x
+print(lanche[1:]) -> com esse print será acessado do 2° índice, 1 na posição que é o suco até o fim da tupla, ou seja, enquanto tiver informação a partir do 1 vai ser carregado e acessado.
+x
+print(lanche[-1]) -> com esse print o item acessado é de trás para frente, ou seja será o 1° elemento da direita para esquerda, nesse caso o índice 3 pudim.
+
+
+Len:
+
+Len é uma referencia a lens que significa comprimento, ou seja ele acessa de quantitativa os elementos de dentro da tupla.
+Ex:
+len(lanche) -> será printado o valor 4 nesse caso, mostrando a quantidade de elementos dentro da tupla solicitada que seria, 0('hamburguer') 1('suco')  2('pizza')  3('pudim'). 4 elementos.
+
+
+Laços e tuplas:
+
+Também é possível trabalhar com tuplas utilizando o laço for que passa analisando cada elemento através do forma de laço do qual ele "cria"
+uma nova variável e "categoriza" cada elemento que passa por essa variável.
+Ex:
+
+for c in lanche:             | o que acontece aqui é que o laço pega o índice 0, 1° elemento hamburguer, depois índice 1, 2° elemento suco,
+  print(c)                   | depois índice 2, 3° elemento pizza e índice 3, 4° elemento pudim. Porém para cada elemento que passa por essa
+                             | variável que o for cria ele executa o pedido e apaga ela para dar espaço ao novo elemento.
+  
+Então seguindo esse exemplo 
+seria printado assim: 
+(hamburguer , suco , pizza , pudim) 
+e quando o total de índices forem 
+acessados o laço termina e saí da 
+repetição normalmente.
+  
+(For pode ser utilizado em range, coleções, variáveis compostas, tuplas, dicionários, listas..)
+
+
+As tuplas são imutáveis:
+
+A melhor forma de exemplificar a imutabilidade das tuplas é imaginar uma caixa que só pode ter itens adicionados ou retirados, nunca 
+trocados, então quando se determina uma tupla como por exemplo: ('hamburguer' , 'suco' , 'pizza' , 'pudim') nunca será possível alterar qualquer valor dentro dessa tupla, a pizza nunca viraria um sorvete mas é possível adicionar um sorvete ou retirar uma pizza, etc.
+
+(Continuação no arquivo aula016.py)
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
