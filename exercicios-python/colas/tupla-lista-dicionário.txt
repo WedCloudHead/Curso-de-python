@@ -1,0 +1,3 @@
+tuplas = ()
+listas = []
+dicionários = {}

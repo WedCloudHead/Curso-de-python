@@ -1,0 +1,30 @@
+#Ao criar uma tupla, basta lembrar que tupla recebe o sinal de () então tudo que estiver dentro desse sinal será uma tupla, por exemplo:
+
+1)
+
+Eu posso declarar uma variável com input dessa forma:
+
+num = int(input('Digite um número: '))
+
+E posso repetir esse input várias vezes e adicionar ele a uma tupla:
+
+for _ in range(4):
+    num = int(input('Digite um número: '))
+
+tupla = tuple(num)
+
+Agora a variável num recebeu 4 inputs e os 4 valores foram guardados dentro da tupla usando o método python
+
+
+
+2)
+
+Porém existe outro método que tem exatamente o mesmo resultado, basta juntar 4 inputs dentro de um (), por exemplo:
+
+
+num = (int(input('Digite um número: ')), int(input('Digite um número: ')), int(input('Digite um número: ')), int(input('Digite um número: ')))
+
+Como pode ver os comandos: num = int(input('Digite um número: ')) estão todos dentro do () ficando: num = (int(input('Digite um número: '))) ou seja
+agora num é uma tupla dessa forma com 4 inputs assim como o range(4) a cima.
+
+
