@@ -1,0 +1,20 @@
+Interrupções dentro de while são muito úteis para controle de condições e validações, nessa aula é ensinado a interrupção utilizando 
+break que pode ser utilizado dentro de uma condição e em estruturas mais amplas também.
+
+Ex:
+
+enquanto Verdadeiro             |               while True:
+   se condição:                 |                  if condicion:
+     execute                    |                    exe
+   se condição:                 |                  if condicion:
+     execute                    |                    exe
+   se condição:                 |                  if condicion:
+     execute                    |                    exe
+   se condição:                 |                  if condicion:
+     execute                    |                    exe
+     interrompa                 |                    break
+ação                            |               action
+
+
+Nesses dois exemplos é mostrado o break sendo utilizado dentro de um sistema de condição, ou seja na ultima condição, se executado
+interrompa o laço. Para mais detalhes: aula015.py na lista de exercícios python 
